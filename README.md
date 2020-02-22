@@ -14,5 +14,7 @@ Our analysis used a few sources.
 
 1. [CODP Census Block 2010](https://data.charlottenc.gov/datasets/census-blocks-2010)
 
+2. [CODP Census Educational Attainment Block Groups](https://data.charlottenc.gov/datasets/census-educational-attainment-block-groups)
 
-2. [Charlotte/Mecklenburg Quality of Life Explorer](https://mcmap.org/qol/downloads/qol-data.zip)
+3. [Charlotte/Mecklenburg Quality of Life Explorer](https://mcmap.org/qol/downloads/qol-data.zip)
+
