@@ -48,7 +48,7 @@ cvals = unpack(cvals)
 final = pd.DataFrame({
     "npa": npa,
     "year": year,
-    "percent": cvals,
+    "percentRented": cvals,
 })
 
 final.to_csv("rental.csv", index=False)
