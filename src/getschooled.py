@@ -24,7 +24,8 @@ filepath = r"C:\Users\Hamez\Desktop\HACKCITY\outdata\clt_edu.csv"
 df = pd.read_csv(filepath)
 
 # Filter to keep vars
-keepvars = ['Proficiency_Elementary_School_2017',
+keepvars = ['NPA',
+            'Proficiency_Elementary_School_2017',
             'Proficiency_Elementary_School_2016',
             'Proficiency_Elementary_School_2015',
             'Proficiency_Elementary_School_2014',
@@ -43,7 +44,8 @@ yearlist = ['2014', '2015', '2016', '2017']
 outlist = []
 
 for year in yearlist:
-    tempdf = df[[f'Proficiency_Elementary_School_{year}',
+    tempdf = df[['NPA',
+                 f'Proficiency_Elementary_School_{year}',
                  f'Proficiency_Middle_School_{year}',
                  f'Proficiency_High_School_{year}']].copy(deep=True)
     
@@ -61,7 +63,7 @@ outdf = pd.concat(outlist)
 
 
 # Save
-outdf.to_csv(r"C:\Users\Hamez\Desktop\HACKCITY\outdata\SchoolProficiency.csv")
+outdf.to_csv(r"C:\Users\Hamez\Desktop\HACKCITY\outdata\SchoolProficiency.csv", index=False)
 
 
 
